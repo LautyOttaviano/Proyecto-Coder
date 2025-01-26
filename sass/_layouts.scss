@@ -1,0 +1,88 @@
+// _layouts.scss
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    padding: 10px; 
+} 
+
+.grid-item { 
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    padding: 10px; 
+    text-align: center; 
+} 
+
+.grid-item img { 
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Ajusta la altura según tus necesidades */ 
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Imagen {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 765px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "aside aside"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 50px auto 25px;
+    }
+}
+
+.imagenes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.imagen-item {
+    text-align: center; /* Centra las imágenes y los textos */
+    max-width: 300px; /* Ajusta el tamaño máximo del contenedor */
+}
+
+.imagenes-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grilla .imagen-item {
+    width: 100%;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
