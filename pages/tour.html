@@ -5,9 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Oficial de Rauw Alejandro</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            min-height: calc(100vh - 60px); /* Altura mínima para que el contenido no sea tapado por el footer */
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="fade-in">
         <img src="../icons/Icono.webp" alt="Logo de Rauw Alejandro">
         <nav>
             <ul>
@@ -21,6 +97,36 @@
     </header>
     <main>
         <h1>Tour Mundial</h1>
+        <section>
+            <h2>Fechas y Ubicaciones</h2>
+            <table>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Ubicación</th>
+                </tr>
+                <tr>
+                    <td>10 de marzo de 2025</td>
+                    <td>Buenos Aires, Argentina</td>
+                </tr>
+                <tr>
+                    <td>15 de marzo de 2025</td>
+                    <td>Santiago, Chile</td>
+                </tr>
+                <tr>
+                    <td>20 de marzo de 2025</td>
+                    <td>Lima, Perú</td>
+                </tr>
+                <tr>
+                    <td>25 de marzo de 2025</td>
+                    <td>Ciudad de México, México</td>
+                </tr>
+                <tr>
+                    <td>30 de marzo de 2025</td>
+                    <td>Bogotá, Colombia</td>
+                </tr>
+            </table>
+            <button>Comprar Entradas</button>
+        </section>
     </main>
     <footer id="footer">
         <section class="footerNav">
@@ -33,6 +139,6 @@
             <img src="../icons/Icono Gmail.png" alt="">
         </section>
     </footer>
-    
 </body>
 </html>
+

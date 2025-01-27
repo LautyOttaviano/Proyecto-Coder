@@ -28,6 +28,9 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
 }
 
 footer img {
@@ -47,4 +50,63 @@ footer img {
     justify-content: center;
     gap: 20px; /* Espacio entre las imágenes */
     flex-wrap: wrap;
+}
+
+// components.scss
+@import 'variables';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: $primary-color;
+    color: $font-color;
+}
+button {
+    background-color: $primary-color;
+    color: $font-color;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color $transition-time;
+}
+button:hover {
+    background-color: $secondary-color;
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=submit] {
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: $secondary-color;
 }
